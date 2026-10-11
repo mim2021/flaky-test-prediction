@@ -1,0 +1,20 @@
+ANSWER KEY (practice data made up by make_sample_reports.py)
+
+20 runs, all on the same commit (a1b2c3d).
+
+test name                           planned chance   failed in these runs   what it is
+test_login_valid_user                          0%            0 of 20          healthy
+test_login_wrong_password                      0%            0 of 20          healthy
+test_logout                                    0%            0 of 20          healthy
+test_login_after_session_timeout              25%            5 of 20          FLAKY
+test_search_by_name                            0%            0 of 20          healthy
+test_search_empty_query                        0%            0 of 20          healthy
+test_search_filters                            0%            0 of 20          healthy
+test_search_autocomplete                       8%            1 of 20          FLAKY
+test_add_to_cart                               0%            0 of 20          healthy
+test_pay_by_card                              40%            9 of 20          FLAKY
+test_apply_coupon                              2%            0 of 20          FLAKY
+test_invoice_download                        100%           20 of 20          BROKEN (always fails, not flaky)
+
+A flaky test with a small failure chance can pass in every run just by luck.
+That is why a tool needs many runs before it can judge a test.

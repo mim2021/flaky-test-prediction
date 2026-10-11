@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="shop-tests" tests="12" failures="1" errors="0" skipped="0" time="14.02" timestamp="2026-10-01T13:30:00">
+  <properties>
+    <property name="commit" value="a1b2c3d"/>
+  </properties>
+    <testcase classname="shop.LoginTests" name="test_login_valid_user" time="0.73"/>
+    <testcase classname="shop.LoginTests" name="test_login_wrong_password" time="1.64"/>
+    <testcase classname="shop.LoginTests" name="test_logout" time="1.72"/>
+    <testcase classname="shop.LoginTests" name="test_login_after_session_timeout" time="1.65"/>
+    <testcase classname="shop.SearchTests" name="test_search_by_name" time="0.53"/>
+    <testcase classname="shop.SearchTests" name="test_search_empty_query" time="0.78"/>
+    <testcase classname="shop.SearchTests" name="test_search_filters" time="0.15"/>
+    <testcase classname="shop.SearchTests" name="test_search_autocomplete" time="0.59"/>
+    <testcase classname="shop.CheckoutTests" name="test_add_to_cart" time="1.92"/>
+    <testcase classname="shop.CheckoutTests" name="test_pay_by_card" time="1.88"/>
+    <testcase classname="shop.CheckoutTests" name="test_apply_coupon" time="1.91"/>
+    <testcase classname="shop.CheckoutTests" name="test_invoice_download" time="0.52">
+      <failure message="AssertionError: invoice PDF is empty" type="AssertionError">AssertionError: invoice PDF is empty</failure>
+    </testcase>
+</testsuite>

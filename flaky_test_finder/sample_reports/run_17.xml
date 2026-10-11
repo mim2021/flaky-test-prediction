@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="shop-tests" tests="12" failures="2" errors="0" skipped="0" time="11.05" timestamp="2026-10-01T18:00:00">
+  <properties>
+    <property name="commit" value="a1b2c3d"/>
+  </properties>
+    <testcase classname="shop.LoginTests" name="test_login_valid_user" time="1.66"/>
+    <testcase classname="shop.LoginTests" name="test_login_wrong_password" time="1.04"/>
+    <testcase classname="shop.LoginTests" name="test_logout" time="0.85"/>
+    <testcase classname="shop.LoginTests" name="test_login_after_session_timeout" time="1.41"/>
+    <testcase classname="shop.SearchTests" name="test_search_by_name" time="0.75"/>
+    <testcase classname="shop.SearchTests" name="test_search_empty_query" time="1.44"/>
+    <testcase classname="shop.SearchTests" name="test_search_filters" time="0.87"/>
+    <testcase classname="shop.SearchTests" name="test_search_autocomplete" time="0.2"/>
+    <testcase classname="shop.CheckoutTests" name="test_add_to_cart" time="0.23"/>
+    <testcase classname="shop.CheckoutTests" name="test_pay_by_card" time="0.59">
+      <failure message="TimeoutError: payment page did not load" type="TimeoutError">TimeoutError: payment page did not load</failure>
+    </testcase>
+    <testcase classname="shop.CheckoutTests" name="test_apply_coupon" time="0.26"/>
+    <testcase classname="shop.CheckoutTests" name="test_invoice_download" time="1.75">
+      <failure message="AssertionError: invoice PDF is empty" type="AssertionError">AssertionError: invoice PDF is empty</failure>
+    </testcase>
+</testsuite>
