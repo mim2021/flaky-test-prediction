@@ -1,0 +1,13 @@
+test_name,run_01,run_02,run_03,run_04,run_05,run_06,run_07,run_08,run_09,run_10,run_11,run_12,run_13,run_14,run_15,run_16,run_17,run_18,run_19,run_20
+test_login_valid_user,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+test_login_wrong_password,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+test_logout,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+test_login_after_session_timeout,.,.,.,.,.,F,F,.,.,.,.,.,F,F,.,F,.,.,.,.
+test_search_by_name,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+test_search_empty_query,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+test_search_filters,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+test_search_autocomplete,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,F,.,.,.,.
+test_add_to_cart,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+test_pay_by_card,F,.,.,.,F,F,F,.,F,F,.,.,.,F,.,.,F,.,.,F
+test_apply_coupon,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+test_invoice_download,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F
