@@ -1,0 +1,13 @@
+test,label,action,failed_runs,runs_seen,failure_rate,reruns_for_95%_sure
+shop.CheckoutTests.test_pay_by_card,FLAKY,FIX FIRST,9,20,45%,6
+shop.LoginTests.test_login_after_session_timeout,FLAKY,FIX FIRST,5,20,25%,11
+shop.SearchTests.test_search_autocomplete,FLAKY,WATCH,1,20,5%,59
+shop.CheckoutTests.test_invoice_download,BROKEN,FIX,20,20,100%,
+shop.CheckoutTests.test_add_to_cart,HEALTHY,NO ACTION,0,20,0%,
+shop.CheckoutTests.test_apply_coupon,HEALTHY,NO ACTION,0,20,0%,
+shop.LoginTests.test_login_valid_user,HEALTHY,NO ACTION,0,20,0%,
+shop.LoginTests.test_login_wrong_password,HEALTHY,NO ACTION,0,20,0%,
+shop.LoginTests.test_logout,HEALTHY,NO ACTION,0,20,0%,
+shop.SearchTests.test_search_by_name,HEALTHY,NO ACTION,0,20,0%,
+shop.SearchTests.test_search_empty_query,HEALTHY,NO ACTION,0,20,0%,
+shop.SearchTests.test_search_filters,HEALTHY,NO ACTION,0,20,0%,

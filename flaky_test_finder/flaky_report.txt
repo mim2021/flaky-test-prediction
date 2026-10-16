@@ -1,0 +1,17 @@
+Read 20 reports from E:\cybersecurity\flaky-test-prediction\flaky_test_finder\sample_reports
+Reruns = how many reruns make you 95% sure of seeing at least one failure.
+
+FLAKY TESTS (worst first)
+  FIX FIRST  shop.CheckoutTests.test_pay_by_card               fails in 45% of runs (9 of 20)   reruns: about 6
+  FIX FIRST  shop.LoginTests.test_login_after_session_timeout  fails in 25% of runs (5 of 20)   reruns: about 11
+  WATCH      shop.SearchTests.test_search_autocomplete         fails in 5% of runs (1 of 20)   reruns: about 59
+
+BROKEN TESTS (they always fail, so they are not flaky)
+  FIX        shop.CheckoutTests.test_invoice_download          failed 20 of 20 runs
+
+HEALTHY TESTS: 8 (no failure seen in these runs)
+
+WARNING: tests were seen in as few as 20 runs. A flaky test that fails in
+less than about 14% of runs can still look healthy. For example, to be 95% sure
+of seeing a test that fails in 2% of runs, you need about 149 runs.
+The failure rates above come from few runs, so treat them as rough.
