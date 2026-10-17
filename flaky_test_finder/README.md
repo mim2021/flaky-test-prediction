@@ -38,9 +38,7 @@ There is no machine learning in this tool. It only counts and does basic probabi
 The command line works, but I also wanted people to be able to pick their files with a click. So I built a web page.
 
 ![The summary, the test health chart and the failure rate chart](web_page_summary.png)
-
 ![The chart that shows how many reruns you need](web_page_reruns.png)
-
 ![The table with every test and the Download CSV button](web_page_table.png)
 
 You choose a folder of reports and press "Find flaky tests". Then the page shows you:

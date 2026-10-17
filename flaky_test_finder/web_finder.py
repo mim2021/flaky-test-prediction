@@ -53,7 +53,7 @@ PAGE = r"""<!doctype html>
     }
   }
   body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-         max-width: 960px; margin: 40px auto; padding: 0 16px; }
+         max-width: 1280px; margin: 40px auto; padding: 0 16px; }
   button { padding: 8px 16px; font-size: 16px; }
   #summary { margin-top: 24px; font-size: 18px; }
   .warning { background: var(--warn-bg); color: var(--warn-text); padding: 8px 12px;
@@ -254,9 +254,7 @@ function drawBars(data) {
     const color = r.label === "BROKEN" ? "var(--c-broken)" : "var(--c-flaky)";
     const name = svg("text", { x: left, y: y0 + 12, "font-size": 12 }, chart, shortName(r.test));
     name.style.fill = "var(--text2)";
-    name.style.paintOrder = "stroke";            // a small surface-colour halo, so a grid line never cuts the letters
-    name.style.stroke = "var(--surface)";
-    name.style.strokeWidth = "4px";
+
 
     // bar: square at the baseline, 4px round at the data end
     const barW = Math.max(r.rate_value * plotW, 3), h = 14, y = y0 + 19, rad = Math.min(4, barW, h / 2);
