@@ -10,10 +10,13 @@ This repository is my attempt to look at that problem in two ways: by counting w
 
 | Part | What it does | Where |
 | --- | --- | --- |
-| Flaky Test Finder | Reads test reports from many runs, finds the flaky tests, and tells you how many reruns you need before you can trust the answer. No machine learning. | [`flaky_test_finder/`](flaky_test_finder/) (it has its own README) |
+| Flaky Test Finder | Reads test reports from many runs, finds the flaky tests, and tells you how many reruns you need before you can trust the answer. No machine learning. It has a command-line tool and a web page with charts and a table. | [`flaky_test_finder/`](flaky_test_finder/) (it has its own README with all the details) |
 | Flaky Classifier | Predicts which tests are flaky from their features, then checks if that can save rerun cost. | `flaky_classifier.py` |
 
 The two parts are meant to work together. The Finder counts what already happened. The Classifier tries to point at risky tests before I spend a lot of reruns.
+
+To try the web page, go into the `flaky_test_finder` folder and run `python web_finder.py`. The details are in that folder's README.
+
 
 ## Flaky Classifier
 
