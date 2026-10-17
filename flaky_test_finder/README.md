@@ -37,7 +37,11 @@ There is no machine learning in this tool. It only counts and does basic probabi
 
 The command line works, but I also wanted people to be able to pick their files with a click. So I built a web page.
 
-![The Flaky Test Finder web page](web_page.png)
+![The summary, the test health chart and the failure rate chart](web_page_summary.png)
+
+![The chart that shows how many reruns you need](web_page_reruns.png)
+
+![The table with every test and the Download CSV button](web_page_table.png)
 
 You choose a folder of reports and press "Find flaky tests". Then the page shows you:
 
@@ -137,7 +141,7 @@ HEALTHY TESTS: 8 (no failure seen in these runs)
 
 - `flaky_test_finder.py`: the full tool for the command line
 - `web_finder.py`: the web page with the charts, the table and the Download CSV button
-- `web_page.png`: a screenshot of the web page
+- `web_page_summary.png`, `web_page_reruns.png`, `web_page_table.png`: screenshots of the web page
 - `make_sample_reports.py`: makes the practice reports and the answer key
 - `check_against_answer_key.py`: compares the tool with the truth
 - `read_one_report.py`, `read_all_reports.py`, `find_flaky_tests.py`, `advise_on_tests.py`: the same tool in small steps, kept to show how I built it
